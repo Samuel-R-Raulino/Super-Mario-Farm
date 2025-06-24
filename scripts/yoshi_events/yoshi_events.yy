@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"yoshi_events",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"scr_pets_events",
+    "path":"folders/Scripts/scr_pets_events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

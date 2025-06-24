@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_control_farm",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_control_farm",
+  "parent":{
+    "name":"scr_control_events",
+    "path":"folders/Scripts/scr_control_events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

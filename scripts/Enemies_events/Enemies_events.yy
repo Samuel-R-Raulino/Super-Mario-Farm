@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Enemies_events",
+  "%Name":"enemies_events",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Enemies_events",
+  "name":"enemies_events",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"scr_enemies_events",
+    "path":"folders/Scripts/scr_enemies_events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

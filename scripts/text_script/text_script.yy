@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"text_escript",
+  "%Name":"text_script",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"text_escript",
+  "name":"text_script",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"scr_text_events",
+    "path":"folders/Scripts/scr_text_events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

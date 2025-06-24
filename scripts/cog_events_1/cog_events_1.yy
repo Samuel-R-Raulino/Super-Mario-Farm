@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cog_events_1",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"scr_power_ups_events",
+    "path":"folders/Scripts/scr_power_ups_events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

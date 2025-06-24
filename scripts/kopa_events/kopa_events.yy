@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"kopa_events",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"scr_enemies_events",
+    "path":"folders/Scripts/scr_enemies_events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

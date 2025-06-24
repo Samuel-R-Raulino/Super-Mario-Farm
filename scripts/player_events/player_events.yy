@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"player_events",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"scr_player_events",
+    "path":"folders/Scripts/scr_player_events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

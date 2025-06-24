@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_player_edit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_player_edit",
+  "parent":{
+    "name":"scr_player_farm_events",
+    "path":"folders/Scripts/scr_player_farm_events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
