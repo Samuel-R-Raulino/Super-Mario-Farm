@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"kopa_events",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"kopa_events",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

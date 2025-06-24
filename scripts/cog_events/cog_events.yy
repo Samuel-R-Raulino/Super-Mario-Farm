@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cog_events",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cog_events",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

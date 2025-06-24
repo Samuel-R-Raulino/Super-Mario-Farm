@@ -1,0 +1,1 @@
+state = dino_main

@@ -1,0 +1,27 @@
+move = 0;
+spd = 3;
+hspd = 0;
+vspd = 0;
+jump_animation = false
+grav = .275
+termVel = 4 
+jspd = -7.15
+mov_state = "idle"
+freeze = false
+changed = false
+run = false
+dash_ = false
+run_spd = 6
+wait_time = room_speed*2 
+wait_counter = 0 
+time = 0
+run_animation = false
+alarm[0] = 45/2
+air = false;
+state = kick_protection_main
+xx = 0
+yy = 0
+dir = ""
+jump_player_delay = false
+show_debug_message("nasci")
+kopa_fusion = noone
