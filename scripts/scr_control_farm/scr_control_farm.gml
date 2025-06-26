@@ -14,8 +14,10 @@ function control_farm() {
         if (keyboard_check(vk_control)) {
             instance_create_layer(x_world, y_world, layer, obj_selected);
         }
-		if(keyboard_lastchar == "1" || keyboard_lastchar == "2"){
-			num_clicado = real(keyboard_lastchar) -1
+		for(var i =0; i < 10;i++){
+			if(keyboard_lastchar == string(i+1)){
+				num_clicado = i
+			}
 		}
     } else {
         x_selector = 0;

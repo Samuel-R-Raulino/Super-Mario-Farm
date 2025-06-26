@@ -29,8 +29,8 @@ if room != rm_farm_stage{
 	y_selector = 0
 	player_stop = false
 	obj_selected = obj_plant_debug
-	objects = [obj_plant_debug,obj_plant_debug_1]
-	sprites = [spr_plant_debug,spr_plant_debug]
+	objects = [obj_plant_debug,obj_plant_debug_1,obj_water]
+	sprites = [spr_plant_debug,spr_plant_debug,spr_water_debug]
 	blend = [c_white,c_black]
 	num_clicado = 0
 }

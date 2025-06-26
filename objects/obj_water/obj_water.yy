@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_plant_debug_1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_water",
+  "eventList":[],
   "managed":true,
-  "name":"obj_plant_debug_1",
+  "name":"obj_water",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plant_debug",
-    "path":"sprites/spr_plant_debug/spr_plant_debug.yy",
+    "name":"spr_water_debug",
+    "path":"sprites/spr_water_debug/spr_water_debug.yy",
   },
   "spriteMaskId":null,
   "visible":true,
