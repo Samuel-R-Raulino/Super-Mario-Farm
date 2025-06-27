@@ -1,6 +1,6 @@
 if room != rm_farm_stage{
 	var player_inst = instance_find(obj_player, 0);
-
+	criado = false
 	if (player_inst != noone && xx >= 0 && yy >= 0) {
 	    player_inst.x = xx;
 	    player_inst.y = yy;
