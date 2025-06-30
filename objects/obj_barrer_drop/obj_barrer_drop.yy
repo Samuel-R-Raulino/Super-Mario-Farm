@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_beef",
+  "%Name":"obj_barrer_drop",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_mario_farm","path":"objects/obj_mario_farm/obj_mario_farm.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_beef",
+  "name":"obj_barrer_drop",
   "overriddenProperties":[],
   "parent":{
-    "name":"drop_qtd",
-    "path":"folders/Objetos/drop_qtd.yy",
+    "name":"drop_uni",
+    "path":"folders/Objetos/drop_uni.yy",
   },
   "parentObjectId":{
-    "name":"obj_drop_qtd",
-    "path":"objects/obj_drop_qtd/obj_drop_qtd.yy",
+    "name":"obj_drop",
+    "path":"objects/obj_drop/obj_drop.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_beef",
-    "path":"sprites/spr_beef/spr_beef.yy",
+    "name":"spr_barrer_horizontal_",
+    "path":"sprites/spr_barrer_horizontal_/spr_barrer_horizontal_.yy",
   },
   "spriteMaskId":null,
   "visible":true,

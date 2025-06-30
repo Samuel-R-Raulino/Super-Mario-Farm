@@ -19,19 +19,20 @@ if room == rm_farm_stage{
 	if(keyboard_check_pressed(vk_shift)){
 		player_stop = !player_stop  
 	}
-	if(player_stop and !criado){
+	show_debug_message(player_stop)
+	if(player_stop and obj_mario_farm.state != player_edit and obj_mario_farm.inv.open = false){
+	
 		instance_create_layer(x_world,y_world,layer,obj_selector)
 		obj_mario_farm.last_state = obj_mario_farm.state
 		obj_mario_farm.state = player_edit
-		criado = true
-	}else if !player_stop and criado{
+	}else if(player_stop == false and obj_mario_farm.state == player_edit and obj_mario_farm.inv.open = false) {
+		obj_mario_farm.state = obj_mario_farm.last_state
+		obj_mario_farm.last_state = noone
 		instance_destroy(obj_selector)
-		if(obj_mario_farm.last_state != noone){
-			obj_mario_farm.state = obj_mario_farm.last_state
-			obj_mario_farm.last_state = noone
-		}
-		criado = false
 	}
-	obj_selected = objects[num_clicado]
+	var _slot_selected = ds_grid_get(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1])
+	if(_slot_selected!=0){
+		obj_selected = _slot_selected[1]
+	}
 	script_execute(state)
 }

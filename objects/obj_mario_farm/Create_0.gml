@@ -10,4 +10,5 @@ inv.player = self
 gun_image = noone
 gun_xscale = 1
 gun_created = false
-substate = gun_sub_state
+substate = noone
+changed = true

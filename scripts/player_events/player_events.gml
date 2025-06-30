@@ -77,7 +77,7 @@ function move_p_f(){
 	spd = 1
 	right = gamepad_button_check(0, gp_padr);
 	left = gamepad_button_check(0, gp_padl);
-	jump = gamepad_button_check_pressed(0, gp_face1);
+	jump = /*gamepad_button_check_pressed(0, gp_face1) ||*/ keyboard_check_pressed(vk_space);
 	run = gamepad_button_check(0, gp_face3);
 	spin = gamepad_button_check(0,gp_face2)
 	move = right - left 
@@ -251,7 +251,7 @@ function move_p(){
 	right = gamepad_button_check(0, gp_padr);
 	left = gamepad_button_check(0, gp_padl);
 	down_ = gamepad_button_check(0, gp_padd);
-	jump = gamepad_button_check_pressed(0, gp_face1);
+	jump = gamepad_button_check_pressed(0, gp_face1) || keyboard_check_pressed(vk_space);
 	run = gamepad_button_check(0, gp_face3);
 	spin = gamepad_button_check(0,gp_face2)
 	move = right - left 

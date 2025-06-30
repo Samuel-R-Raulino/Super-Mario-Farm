@@ -1,10 +1,9 @@
 function control_farm() {
     if (player_stop) {
-        // Movimenta o seletor por células de 16px
+		
         x_selector += -keyboard_check_pressed(vk_left) + keyboard_check_pressed(vk_right);
         y_selector += -keyboard_check_pressed(vk_up) + keyboard_check_pressed(vk_down);
 
-        // Calcula posição no mundo (se estiver usando câmera)
         var cam_x = camera_get_view_x(view_camera[0]);
         var cam_y = camera_get_view_y(view_camera[0]);
 

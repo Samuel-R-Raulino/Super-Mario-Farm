@@ -3,11 +3,11 @@ if(keyboard_check_pressed(vk_tab)){
 	open = !open  
 	
 }
-if(open and player.state != player_edit){
+if(open and player.state != player_edit and !Main.player_stop){
 	
 	player.last_state = player.state
 	player.state = player_edit
-}else if(open == false and player.state == player_edit) {
+}else if(open == false and player.state == player_edit and !Main.player_stop) {
 	player.state = player.last_state
 	player.last_state = noone
 }
@@ -52,6 +52,5 @@ if(open){
 	if(keyboard_check_pressed(ord("A")) and slot!=0){
 		instance_create_layer(100,0,layer,obj_selected)
 	}
-}else{
-	slot_selected = [0,0]
+	
 }
