@@ -7,3 +7,7 @@ state = main_farm
 last_state = noone
 inv = instance_create_layer(x,y,layer,obj_inv)
 inv.player = self
+gun_image = noone
+gun_xscale = 1
+gun_created = false
+substate = gun_sub_state

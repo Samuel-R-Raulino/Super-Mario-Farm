@@ -1,0 +1,14 @@
+hspd = 0
+vspd = 0
+spd = 1
+dir = "up"
+var seg = 45
+time_mov = seg * 2
+alarm[0] = time_mov
+mov_little = noone
+mov_big = noone
+size_state = mov_little
+time_ev = seg*4
+alarm[1] =time_ev
+turned = false
+substate = gun_sub_state

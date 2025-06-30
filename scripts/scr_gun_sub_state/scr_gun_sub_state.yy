@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_gun_sub_state",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_gun_sub_state",
+  "parent":{
+    "name":"scr_player_farm_events",
+    "path":"folders/Scripts/scr_player_farm_events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

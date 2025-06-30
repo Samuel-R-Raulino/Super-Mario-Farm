@@ -6,8 +6,8 @@
   "name":"obj_drop_debug",
   "overriddenProperties":[],
   "parent":{
-    "name":"drop",
-    "path":"folders/Objetos/drop.yy",
+    "name":"drop_qtd",
+    "path":"folders/Objetos/drop_qtd.yy",
   },
   "parentObjectId":{
     "name":"obj_drop",

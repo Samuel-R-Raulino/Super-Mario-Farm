@@ -11,7 +11,12 @@ if(open){
 				draw_sprite_ext(spr_slot,0,i*scale*size,ii*scale*size,scale,scale,0,c_white,1)
 			}
 			if(slot != 0){
-				draw_sprite_ext(slot[0],0,i*scale*size,ii*scale*size,scale,scale,0,c_white,1)
+				if(slot[2] == "qtd"){
+					draw_sprite_ext(slot[0],0,i*scale*size,ii*scale*size,scale/2,scale/2,0,c_aqua,1)
+					draw_text(i*scale*size+(10*scale),ii*scale*size+(10*scale),slot[3])
+				}else if(slot[2] == "uni"){
+					draw_sprite_ext(slot[0],0,i*scale*size,ii*scale*size,scale/2,scale/2,0,c_white,1)
+				}
 			}
 		}
 	}
