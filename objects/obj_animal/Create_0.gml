@@ -12,3 +12,4 @@ time_ev = seg*4
 alarm[1] =time_ev
 turned = false
 substate = gun_sub_state
+drop = noone

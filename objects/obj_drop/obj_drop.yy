@@ -11,8 +11,8 @@
   "name":"obj_drop",
   "overriddenProperties":[],
   "parent":{
-    "name":"drop_qtd",
-    "path":"folders/Objetos/drop_qtd.yy",
+    "name":"drop_uni",
+    "path":"folders/Objetos/drop_uni.yy",
   },
   "parentObjectId":null,
   "persistent":false,

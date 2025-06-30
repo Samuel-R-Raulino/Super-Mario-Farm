@@ -16,10 +16,10 @@ if room == rm_farm_stage{
 	var cam_y = camera_get_view_y(view_camera[0]);
 	var x_world = cam_x + x_selector;
 	var y_world = cam_y + y_selector;
-	if(keyboard_check_pressed(vk_space)){
+	if(keyboard_check_pressed(vk_shift)){
 		player_stop = !player_stop  
 	}
-	/*if(player_stop and !criado){
+	if(player_stop and !criado){
 		instance_create_layer(x_world,y_world,layer,obj_selector)
 		obj_mario_farm.last_state = obj_mario_farm.state
 		obj_mario_farm.state = player_edit
@@ -31,7 +31,7 @@ if room == rm_farm_stage{
 			obj_mario_farm.last_state = noone
 		}
 		criado = false
-	}*/
+	}
 	obj_selected = objects[num_clicado]
 	script_execute(state)
 }

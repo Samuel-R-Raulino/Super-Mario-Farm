@@ -33,6 +33,7 @@ if room != rm_farm_stage{
 	sprites = [spr_plant_debug,spr_plant_debug,spr_water_debug]
 	blend = [c_white,c_black]
 	num_clicado = 0
+	criado = false
 }
 
 /*

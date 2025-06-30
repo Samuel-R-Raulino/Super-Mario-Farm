@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_drop_debug_1",
+  "%Name":"obj_chicken",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_drop_debug_1",
+  "name":"obj_chicken",
   "overriddenProperties":[],
   "parent":{
     "name":"drop_qtd",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite120",
-    "path":"sprites/Sprite120/Sprite120.yy",
+    "name":"spr_chicken",
+    "path":"sprites/spr_chicken/spr_chicken.yy",
   },
   "spriteMaskId":null,
   "visible":true,
