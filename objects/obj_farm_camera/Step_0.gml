@@ -1,24 +1,25 @@
 
-
+var camera_width = 680
+var camera_height = 520
 if player.x > camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0]) and dir = ""{
 	var xx = x
-	dest_x = xx + camera_get_view_width(view_camera[0])
+	dest_x = xx + camera_width
 	dir = "right"
 }
 if player.x <= camera_get_view_x(view_camera[0]) and dir = ""{
 	var xx = x
-	dest_x = xx - camera_get_view_width(view_camera[0])
+	dest_x = xx - camera_width
 	dir = "left"
 }
 
 if player.y > camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0]) and dir = ""{
 	var yy = y
-	dest_y = yy + camera_get_view_height(view_camera[0])
+	dest_y = yy + camera_height
 	dir = "down"
 }
 if player.y <= camera_get_view_y(view_camera[0]) and dir = ""{
 	var yy = y
-	dest_y = yy - camera_get_view_height(view_camera[0])
+	dest_y = yy - camera_height
 	dir = "up"
 }
 /*
