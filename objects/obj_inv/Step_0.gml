@@ -3,6 +3,9 @@ if(keyboard_check_pressed(vk_tab)){
 	open = !open  
 	
 }
+if(keyboard_check_pressed(ord("N"))){
+	new_state = !new_state
+}
 if(open and player.state != player_edit and !Main.player_stop){
 	
 	player.last_state = player.state
@@ -11,7 +14,6 @@ if(open and player.state != player_edit and !Main.player_stop){
 	player.state = player.last_state
 	player.last_state = noone
 }
-show_debug_message(player.state)
 if(open){
 	var min_slot_x = 0
 	var min_slot_y = 0
@@ -49,8 +51,21 @@ if(open){
 	if(slot !=0){
 		obj_selected = slot[1]
 	}
+	
 	if(keyboard_check_pressed(ord("A")) and slot!=0){
 		instance_create_layer(100,0,layer,obj_selected)
 	}
 	
 }
+for(var i =0; i < ds_grid_width(global.inventory);i++){
+		for(var ii =0; ii < ds_grid_height(global.inventory);ii++){
+			var slot = ds_grid_get(global.inventory,i,ii)	
+			if(slot!=0){
+				if(slot[3] == "qtd"){
+					if(slot[4] <=0){
+						ds_grid_set(global.inventory,0,0,0)
+					}
+				}
+			}
+		}
+	}

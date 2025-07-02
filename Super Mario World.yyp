@@ -125,6 +125,7 @@
     {"id":{"name":"scr_player_change_camera","path":"scripts/scr_player_change_camera/scr_player_change_camera.yy",},},
     {"id":{"name":"scr_player_edit","path":"scripts/scr_player_edit/scr_player_edit.yy",},},
     {"id":{"name":"scr_player_main","path":"scripts/scr_player_main/scr_player_main.yy",},},
+    {"id":{"name":"scr_select_sub_state","path":"scripts/scr_select_sub_state/scr_select_sub_state.yy",},},
     {"id":{"name":"text_script","path":"scripts/text_script/text_script.yy",},},
     {"id":{"name":"yoshi_events","path":"scripts/yoshi_events/yoshi_events.yy",},},
     {"id":{"name":"audio_athetic","path":"sounds/audio_athetic/audio_athetic.yy",},},

@@ -8,12 +8,12 @@
   "name":"obj_barrer_drop",
   "overriddenProperties":[],
   "parent":{
-    "name":"drop_uni",
-    "path":"folders/Objetos/drop_uni.yy",
+    "name":"drop_qtd",
+    "path":"folders/Objetos/drop_qtd.yy",
   },
   "parentObjectId":{
-    "name":"obj_drop",
-    "path":"objects/obj_drop/obj_drop.yy",
+    "name":"obj_drop_qtd",
+    "path":"objects/obj_drop_qtd/obj_drop_qtd.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

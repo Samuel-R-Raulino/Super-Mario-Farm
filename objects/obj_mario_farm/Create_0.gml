@@ -12,3 +12,4 @@ gun_xscale = 1
 gun_created = false
 substate = noone
 changed = true
+stop = false

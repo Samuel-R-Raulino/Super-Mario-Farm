@@ -10,3 +10,4 @@ time = 0
 val = 3
 nome = "qtd_debug"
 func = noone
+object = noone
