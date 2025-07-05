@@ -1,6 +1,6 @@
 
-var camera_width = 680
-var camera_height = 520
+var camera_width = camera_get_view_width(view_camera[0]) 
+var camera_height = camera_get_view_height(view_camera[0]) 
 if player.x > camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0]) and dir = ""{
 	var xx = x
 	dest_x = xx + camera_width

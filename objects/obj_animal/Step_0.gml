@@ -1,4 +1,5 @@
 
+var size_state = mov_little
 if(size_state!=noone){
 	if(dir = ""){
 		hspd = 0

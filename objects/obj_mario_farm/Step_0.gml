@@ -1,4 +1,4 @@
-if(substate!=noone){
+if(substate != noone and !is_real(substate)){
 	script_execute(substate)
 	changed = true
 }

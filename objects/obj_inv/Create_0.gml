@@ -6,3 +6,5 @@ slot_use = [0,0]
 obj_selected = noone
 next_state = noone
 new_state = false
+open_plant = false
+change_state = false;

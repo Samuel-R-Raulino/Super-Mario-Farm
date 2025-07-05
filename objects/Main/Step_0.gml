@@ -8,7 +8,6 @@
 */
 
 if room == rm_farm_stage and !change_state{
-	
 	change_state = true
 }
 if room == rm_farm_stage{
@@ -20,7 +19,6 @@ if room == rm_farm_stage{
 		player_stop = !player_stop  
 	}
 	if(player_stop and obj_mario_farm.state != player_edit and obj_mario_farm.inv.open = false){
-	
 		instance_create_layer(x_world,y_world,layer,obj_selector)
 		obj_mario_farm.last_state = obj_mario_farm.state
 		obj_mario_farm.state = player_edit

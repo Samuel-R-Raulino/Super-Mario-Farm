@@ -1,6 +1,7 @@
 
 if(keyboard_check_pressed(vk_tab)){
-	open = !open  
+	open = !open
+		
 	
 }
 if(keyboard_check_pressed(ord("N"))){
@@ -10,9 +11,10 @@ if(open and player.state != player_edit and !Main.player_stop){
 	
 	player.last_state = player.state
 	player.state = player_edit
-}else if(open == false and player.state == player_edit and !Main.player_stop) {
+}else if(open == false and player.state == player_edit and !Main.player_stop and change_state = true) {
 	player.state = player.last_state
 	player.last_state = noone
+	change_state = false
 }
 if(open){
 	var min_slot_x = 0
@@ -63,7 +65,7 @@ for(var i =0; i < ds_grid_width(global.inventory);i++){
 			if(slot!=0){
 				if(slot[3] == "qtd"){
 					if(slot[4] <=0){
-						ds_grid_set(global.inventory,0,0,0)
+						ds_grid_set(global.inventory,i,ii,0)
 					}
 				}
 			}

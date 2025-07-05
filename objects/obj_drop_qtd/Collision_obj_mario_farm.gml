@@ -5,8 +5,8 @@ for (var i = 0; i < ds_grid_width(global.inventory); i ++){
 		
 		if(slot != 0 and added = false){
 			if(is_array(slot)){
-				if(slot[1] == nome){
-					slot[3] += val 
+				if(slot[1] == object_index){
+					slot[4] += val 
 					ds_grid_set(global.inventory,i,ii,slot)
 					added = true
 					break

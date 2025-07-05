@@ -32,8 +32,8 @@ if(open){
 
 var _slot_selected = ds_grid_get(global.inventory,slot_use[0],slot_use[1])
 if(_slot_selected != 0 and _slot_selected != noone ){
-	draw_sprite_ext(spr_slot,0,(18*scale*size)-10,0*scale*size,scale,scale,0,c_white,1)
-	draw_sprite_ext(_slot_selected[0],0,(18*scale*size)-20,(0*scale*size)-10,scale-1,scale-1,0,c_white,1)
+	draw_sprite_ext(spr_slot,0,(18*scale*size),0*scale*size,scale,scale,0,c_white,1)
+	draw_sprite_ext(_slot_selected[0],0,(18*scale*size)+5,(0*scale*size)+5,scale-1,scale-1,0,c_white,1)
 	if _slot_selected[1] == obj_barrer_drop{
 		obj_selected = _slot_selected[6]
 	}else{
