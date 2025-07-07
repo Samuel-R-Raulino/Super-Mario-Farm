@@ -19,7 +19,7 @@ if room == rm_farm_stage{
 		player_stop = !player_stop  
 	}
 	if(player_stop and obj_mario_farm.state != player_edit and obj_mario_farm.inv.open = false){
-		instance_create_layer(x_world,y_world,layer,obj_selector)
+		instance_create_layer(x_world,y_world,"Instances_3",obj_selector)
 		obj_mario_farm.last_state = obj_mario_farm.state
 		obj_mario_farm.state = player_edit
 	}else if(player_stop == false and obj_mario_farm.state == player_edit and obj_mario_farm.inv.open = false) {

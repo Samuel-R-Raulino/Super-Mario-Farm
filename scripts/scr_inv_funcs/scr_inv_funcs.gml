@@ -35,6 +35,45 @@ function add_item_qtd(sprite,object,nome,val,func){
 	}
 	}
 }
+function ver_item_qtd(inv,inv2,sprite,qtd,remove){
+	var found = false
+	for(var i =0; i < ds_grid_width(inv2);i++){
+		for(var ii =0; ii < ds_grid_height(inv2);ii++){
+			var _slot = ds_grid_get(inv2,i,ii)
+			if(_slot != 0){
+				if(_slot[0] == sprite){
+					if(_slot[4] >= qtd){
+						if(remove){
+							_slot[4]-=qtd
+						}
+						found = true
+					}
+				}
+			}
+		}
+	}
+	if(found){
+		return true
+	}else{
+		return false
+	}
+}
+function add_item_uni(sprite,object,func){
+	var added = false
+	for (var i = 0; i < ds_grid_width(global.inventory); i ++){
+		for (var ii= 0; ii < ds_grid_width(global.inventory); ii ++){
+			var slot = ds_grid_get(global.inventory,i,ii)
+			if(slot == 0 and added = false){
+				ds_grid_set(global.inventory,i,ii,[sprite,object,"uni",noone,func,other])
+				added = true
+				break
+			}
+		}
+		if(added){
+			break
+		}
+	}
+}
 function decrease_item_qtd(sprite,object,nome,val,func){
 	var added = false
 	for (var i = 0; i < ds_grid_width(global.inventory); i ++){

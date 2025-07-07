@@ -1,4 +1,4 @@
-inv= ds_grid_create(3,1)
+inventory = ds_grid_create(3,1)
 open = false
 player = obj_mario_farm
 slot_selected = [0,0]
@@ -8,3 +8,4 @@ next_state = noone
 new_state = false
 open_plant = false
 plant = noone
+global.fertilizers = 0;

@@ -5,3 +5,5 @@ criar_obj = noone
 criar_obj_crescido = noone
 qtd = 0
 inv = noone
+fertir = 0
+time = 45

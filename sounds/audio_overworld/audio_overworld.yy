@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":89.58254,
+  "duration":0.0,
   "name":"audio_overworld",
   "parent":{
     "name":"Sons",

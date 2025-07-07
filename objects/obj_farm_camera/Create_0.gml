@@ -4,3 +4,6 @@ dir = ""
 dest_x = 0
 dest_y = 0
 player = obj_mario_farm
+changed = false
+xx = 0
+yy = 0

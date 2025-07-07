@@ -5,10 +5,10 @@
     open_plant = false;
 }*/
 
-if(keyboard_check_pressed(vk_alt) and plant.image_blend == c_aqua){
+if(keyboard_check_pressed(vk_alt)){
 	open = !open  
 }
-
+show_debug_message(global.fertilizers)
 var _player = instance_nearest(x,y,obj_mario_farm)
 if(open and _player.state != player_edit and !Main.player_stop){
 	_player.last_state = _player.state

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.07102,
+  "duration":1.021678,
   "name":"audio_mario_grow",
   "parent":{
     "name":"Sons",

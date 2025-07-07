@@ -2,13 +2,19 @@ function main_farm(){
 	with (obj_plant_debug) {
 	    image_blend = c_white;
 	}
-
-	_plant = instance_nearest(x, y, obj_plant_debug);
+	if(substate == noone){
+		if(keyboard_check_pressed(vk_space)){
+			var _attack = instance_create_layer(x,y,"Instances_5",obj_attack)
+			_attack.player = self
+		}
+	}
+	/*_plant = instance_nearest(x, y, obj_plant_debug);
 	if (_plant != noone) {
 	    if (distance_to_object(_plant) < 60) {
 	        _plant.image_blend = c_aqua;
 	    }
 	}
+	*/
 	var _left = keyboard_check(vk_left)
 	var _right = keyboard_check(vk_right)
 	var _up = keyboard_check(vk_up)
@@ -56,6 +62,6 @@ function main_farm(){
 	}else if(dir == "up"){
 		sprite_index = spr_farm_mario_walk_up
 	}else if(dir == "horizontal"){
-		sprite_index = spr_farm_mario_walk_horizontal
+		sprite_index = spr_farm_mario_attack
 	}
 }

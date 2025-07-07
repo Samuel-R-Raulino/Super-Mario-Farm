@@ -1,4 +1,4 @@
-var inventory = inv
+/*
 var scale = 4
 var size = 16
 if(open){
@@ -43,6 +43,7 @@ if (keyboard_check_pressed(vk_control) and open) {
 		// Faz uma cópia para evitar referência compartilhada
 		var _inst_copy = array_copy_manual(_inst);
 		add_item_qtd_esp(inventory, _inst_copy, i, ii,i2,ii2, 1, obj_fertilizer);
+		global.fertilizers++
 		show_debug_message(_inst);
 	}
 }

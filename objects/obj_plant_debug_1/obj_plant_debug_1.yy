@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plant_debug",
-    "path":"sprites/spr_plant_debug/spr_plant_debug.yy",
+    "name":"spr_plant_carroot",
+    "path":"sprites/spr_plant_carroot/spr_plant_carroot.yy",
   },
   "spriteMaskId":null,
   "visible":true,

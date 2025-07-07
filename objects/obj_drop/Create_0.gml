@@ -9,3 +9,4 @@ wait = false
 time = 0
 nome = "uni_debug"
 func = noone
+play_sound(audio_take_item)

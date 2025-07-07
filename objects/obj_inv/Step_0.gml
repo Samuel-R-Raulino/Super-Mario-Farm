@@ -1,7 +1,13 @@
 
 if(keyboard_check_pressed(vk_tab)){
 	open = !open
-		
+	if(start_sound){
+		play_sound(audio_open_inventory)
+		start_sound = false
+	}else{
+		play_sound(audio_close_inventory)
+		start_sound = true
+	}
 	
 }
 if(keyboard_check_pressed(ord("N"))){
@@ -22,6 +28,7 @@ if(open){
 	var max_slot_x = ds_grid_width(global.inventory)-1
 	var max_slot_y = ds_grid_height(global.inventory)-1
 	if(keyboard_check_pressed(vk_left)){
+		audio_play_sound(audio_select_effect,0,0)
 		if slot_selected[0] >min_slot_x{
 			slot_selected[0] -=1
 		}else{
@@ -29,6 +36,7 @@ if(open){
 		}
 	}
 	if(keyboard_check_pressed(vk_right)){
+		audio_play_sound(audio_select_effect,0,0)
 		if slot_selected[0] < max_slot_x{
 			slot_selected[0] +=1
 		}else{
@@ -36,6 +44,7 @@ if(open){
 		}
 	}
 	if(keyboard_check_pressed(vk_up)){
+		audio_play_sound(audio_select_effect,0,0)
 		if slot_selected[1] > min_slot_y{
 			slot_selected[1] -=1
 		}else{
@@ -43,6 +52,7 @@ if(open){
 		}
 	}
 	if(keyboard_check_pressed(vk_down)){
+		audio_play_sound(audio_select_effect,0,0)
 		if slot_selected[1] < max_slot_y{
 			slot_selected[1] +=1
 		}else{

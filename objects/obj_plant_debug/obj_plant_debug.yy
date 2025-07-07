@@ -7,6 +7,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_seed","path":"objects/obj_seed/obj_seed.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_carrot","path":"objects/obj_carrot/obj_carrot.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_cane","path":"objects/obj_cane/obj_cane.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_fertilizer","path":"objects/obj_fertilizer/obj_fertilizer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_plant_debug",
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plant_debug",
-    "path":"sprites/spr_plant_debug/spr_plant_debug.yy",
+    "name":"spr_plant_debug_1",
+    "path":"sprites/spr_plant_debug_1/spr_plant_debug_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

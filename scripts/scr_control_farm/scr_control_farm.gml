@@ -1,6 +1,8 @@
 function control_farm() {
     if (player_stop) {
-		
+		if(keyboard_check_pressed(vk_left or vk_right or vk_up or vk_down)){
+			audio_play_sound(audio_select_effect,0,0)
+		}
         x_selector += -keyboard_check_pressed(vk_left) + keyboard_check_pressed(vk_right);
         y_selector += -keyboard_check_pressed(vk_up) + keyboard_check_pressed(vk_down);
 
@@ -14,6 +16,9 @@ function control_farm() {
 		var _entidade_proxima = instance_nearest(x,y,obj_animal)
 		var _slot = ds_grid_get(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1])
 		if(obj_selected!=noone){
+			if(keyboard_check_pressed(vk_control)){
+				audio_play_sound(audio_selecting,0,0)
+			}
 			if(_slot[1] == obj_hoe_drop){
 				var _obj_proximo = instance_nearest(x_world,y_world,obj_plant_debug)
 				
@@ -22,15 +27,20 @@ function control_farm() {
 					 if(_plant!=noone){
 						if(_plant.x = x_world and _plant.y = y_world ){
 							if _plant.image_index > 1{
+								if(_plant!=noone){
 								var _drop = instance_create_layer(x_world,y_world,"Instances_2",_plant.criar_obj_crescido)
 								_drop.qtd = _plant.qtd
 								_drop.absorved = true
+								instance_destroy(_plant)
+								//instance_create_layer(x,y,layer,obj_plant_debug)
+								}
 							}else{
-								var _drop = instance_create_layer(x_world,y_world,"Instances_2",_plant.criar_obj)
+								var _drop = instance_create_layer(x_world,y_world,"Instances_2",_plant.criar_obj_crescido)
 								_drop.qtd = _plant.qtd
 								_drop.absorved = true
+								instance_create_layer(x_world,y_world,layer,obj_plant_debug)
+								instance_destroy(_plant)
 							}
-							instance_destroy(_plant)
 						}
 					}else if(_obj_proximo != noone){
 						if(_obj_proximo.x = x_world and _obj_proximo.y = y_world ){
@@ -42,7 +52,8 @@ function control_farm() {
 					else{
 							var plant = instance_create_layer(x_world,y_world,layer,obj_plant_debug)
 							plant.inv_player = _slot[5]
-							instance_create_layer(x_world, y_world, layer, obj_plant_debug)}
+							//instance_create_layer(x_world, y_world, layer, obj_plant_debug)
+					}
 		        } 
 			}else if(_slot[1] != obj_hoe_drop and _slot[1] !=obj_fertilizer){
 				var _obj_proximo = instance_nearest(x,y,obj_selected)
@@ -51,14 +62,22 @@ function control_farm() {
 						if(_obj_proximo.x = x_world and _obj_proximo.y = y_world ){
 							instance_destroy(_obj_proximo)
 						}else{
-							if( (_entidade_proxima.x != x_world and _entidade_proxima.y != y_world)){
-								instance_create_layer(x_world, y_world, layer, obj_selected);
+							if( (_entidade_proxima!=noone and _entidade_proxima.x != x_world and _entidade_proxima.y != y_world)){
+								var _obj = instance_create_layer(x_world, y_world, layer, obj_selected);
+								_obj.val = 1
 								_slot[4]-=1
 								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+							}else{
+								var _obj = instance_create_layer(x_world, y_world, layer, obj_selected);
+								_obj.val = 1
+								_slot[4]-=1
+								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+								
 							}
 						}
 					}else{
-						instance_create_layer(x_world, y_world, layer, obj_selected);
+						var _obj = instance_create_layer(x_world, y_world, layer, obj_selected);
+						_obj.val = 1
 						_slot[4]-=1
 						ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
 					}
@@ -70,10 +89,16 @@ function control_farm() {
 						if(_obj_proximo.x = x_world and _obj_proximo.y = y_world ){
 							instance_destroy(_obj_proximo)
 						}else{
-							if( (_entidade_proxima.x != x_world and _entidade_proxima.y != y_world)){
+							if( (_entidade_proxima!=noone and _entidade_proxima.x != x_world and _entidade_proxima.y != y_world)){
 								instance_create_layer(x_world, y_world, layer, obj_selected);
 								_slot[4]-=0.5
 								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+							}else{
+								var _obj = instance_create_layer(x_world, y_world, layer, obj_selected);
+								_obj.val = 1
+								_slot[4]-=1
+								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+								
 							}
 						}
 					}else{

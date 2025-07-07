@@ -1,4 +1,5 @@
 var added = false
+play_sound(audio_take_item)
 for (var i = 0; i < ds_grid_width(global.inventory); i ++){
 	for (var ii= 0; ii < ds_grid_width(global.inventory); ii ++){
 		var slot = ds_grid_get(global.inventory,i,ii)

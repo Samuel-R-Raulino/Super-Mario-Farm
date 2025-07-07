@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"audio_close_inventory",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.98684806,
+  "name":"audio_close_inventory",
+  "parent":{
+    "name":"Sons",
+    "path":"folders/Sons.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"audio_close_inventory.mp3",
+  "type":0,
+  "volume":1.0,
+}

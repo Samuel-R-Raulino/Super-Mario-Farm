@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.432,
+  "duration":0.40034014,
   "name":"audio_general_jump",
   "parent":{
     "name":"Sons",
