@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_move_worm",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_move_worm",
+  "parent":{
+    "name":"scr_animal_events",
+    "path":"folders/Scripts/scr_animal_events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

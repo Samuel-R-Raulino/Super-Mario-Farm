@@ -149,6 +149,7 @@
     {"id":{"name":"scr_control_farm","path":"scripts/scr_control_farm/scr_control_farm.yy",},},
     {"id":{"name":"scr_gun_sub_state","path":"scripts/scr_gun_sub_state/scr_gun_sub_state.yy",},},
     {"id":{"name":"scr_inv_funcs","path":"scripts/scr_inv_funcs/scr_inv_funcs.yy",},},
+    {"id":{"name":"scr_move_worm","path":"scripts/scr_move_worm/scr_move_worm.yy",},},
     {"id":{"name":"scr_player_change_camera","path":"scripts/scr_player_change_camera/scr_player_change_camera.yy",},},
     {"id":{"name":"scr_player_edit","path":"scripts/scr_player_edit/scr_player_edit.yy",},},
     {"id":{"name":"scr_player_main","path":"scripts/scr_player_main/scr_player_main.yy",},},
