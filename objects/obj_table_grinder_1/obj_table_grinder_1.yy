@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_table_grinder",
-    "path":"sprites/spr_table_grinder/spr_table_grinder.yy",
+    "name":"spr_table_grinder_3",
+    "path":"sprites/spr_table_grinder_3/spr_table_grinder_3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

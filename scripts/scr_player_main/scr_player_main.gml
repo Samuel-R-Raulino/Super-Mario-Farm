@@ -2,7 +2,7 @@ function main_farm(){
 	with (obj_plant_debug) {
 	    image_blend = c_white;
 	}
-	if(substate == noone){
+	if(substate != gun_sub_state and !audio_is_playing(audio_dash)){
 		if(keyboard_check_pressed(vk_space)){
 			var _attack = instance_create_layer(x,y,"Instances_5",obj_attack)
 			_attack.player = self
