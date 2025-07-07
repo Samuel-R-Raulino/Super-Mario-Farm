@@ -10,8 +10,8 @@
   "name":"obj_wood",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"plant",
+    "path":"folders/Objetos/plant.yy",
   },
   "parentObjectId":{
     "name":"obj_block",

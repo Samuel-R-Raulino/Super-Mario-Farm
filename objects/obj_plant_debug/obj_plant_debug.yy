@@ -13,8 +13,8 @@
   "name":"obj_plant_debug",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"plant",
+    "path":"folders/Objetos/plant.yy",
   },
   "parentObjectId":null,
   "persistent":false,

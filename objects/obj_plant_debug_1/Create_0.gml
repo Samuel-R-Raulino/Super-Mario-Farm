@@ -1,9 +1,11 @@
 index = 0
 crescer = false
-alarm[0] = 45
+timer = 45*60
+alarm[0] = timer
 criar_obj = noone
 criar_obj_crescido = noone
 qtd = 0
 inv = noone
 fertir = 0
 time = 45
+plantado = false

@@ -41,19 +41,50 @@ function move_solo(){
 if(size_state!=noone){
 	show_debug_message("foi")
 	var _plant = instance_nearest(x,y,obj_plant_debug)
-	if(x > x-_plant.x){
-		dir="left"
-	}else if(x < x-_plant.x){
-		dir="right"
-	}else if(y > y-_plant.y){
-		dir="up"
-	}else if(y < y-_plant.y){
-		dir="down"
-	}
+	var dx = _plant.x - x;
+	var dy = _plant.y - y;
+	if(_plant!=noone){
+		if(dim_dir = "horizontal"){
+		    if (dx > 2) {
+		        dir = "right";
+		    } else if(dx < -2){
+		        dir = "left";
+		    }else{
+				dim_dir = "vertical"	
+			}
+		}
+		if(dim_dir = "vertical"){
+			if (dy > 2) {
+				dir = "down";
+			} else if (dy <-2){
+			    dir = "up";
+		    
+			}else{
+				dim_dir = "horizontal"	
+			}
+		}
+		
+	
+		show_debug_message(dir)
 	show_debug_message(dir)
-	if(place_meeting(x,y,_plant)){
-		_plant.fertir+=10
+	
+	if(place_meeting(x+3,y,_plant)){
+		_plant.fertir+=2
+		_plant.timer-=20
 		instance_destroy()
+	}if(place_meeting(x-3,y,_plant)){
+		_plant.fertir+=2
+		_plant.timer-=20
+		instance_destroy()
+	}if(place_meeting(x,y+3,_plant)){
+		_plant.fertir+=2
+		_plant.timer-=20
+		instance_destroy()
+	}if(place_meeting(x,y-3,_plant)){
+		_plant.fertir+=2
+		_plant.timer-=20
+		instance_destroy()
+	}
 	}
 	if(dir = ""){
 		hspd = 0

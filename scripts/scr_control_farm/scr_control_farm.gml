@@ -55,7 +55,7 @@ function control_farm() {
 							//instance_create_layer(x_world, y_world, layer, obj_plant_debug)
 					}
 		        } 
-			}else if(_slot[1] != obj_hoe_drop and _slot[1] !=obj_fertilizer){
+			}else if(_slot[1] != obj_hoe_drop and _slot[1] !=obj_fertilizer and _slot[1] != obj_water_bucket){
 				var _obj_proximo = instance_nearest(x,y,obj_selected)
 		        if (keyboard_check_pressed(vk_control) and obj_selector.col = false and obj_selected !=noone) {
 					if(_obj_proximo!=noone){
@@ -77,6 +77,33 @@ function control_farm() {
 						}
 					}else{
 						var _obj = instance_create_layer(x_world, y_world, layer, obj_selected);
+						_obj.val = 1
+						_slot[4]-=1
+						ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+					}
+		        } 
+			}else if(_slot[1] == obj_water_bucket){
+				var _obj_proximo = instance_nearest(x,y,obj_selected)
+		        if (keyboard_check_pressed(vk_control) and obj_selector.col = false and obj_selected !=noone) {
+					if(_obj_proximo!=noone){
+						if(_obj_proximo.x = x_world and _obj_proximo.y = y_world ){
+							instance_destroy(_obj_proximo)
+						}else{
+							if( (_entidade_proxima!=noone and _entidade_proxima.x != x_world and _entidade_proxima.y != y_world)){
+								var _obj = instance_create_layer(x_world, y_world, layer, obj_water);
+								_obj.val = 1
+								_slot[4]-=1
+								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+							}else{
+								var _obj = instance_create_layer(x_world, y_world, layer, obj_water);
+								_obj.val = 1
+								_slot[4]-=1
+								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+								
+							}
+						}
+					}else{
+						var _obj = instance_create_layer(x_world, y_world, layer, obj_water_1);
 						_obj.val = 1
 						_slot[4]-=1
 						ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)

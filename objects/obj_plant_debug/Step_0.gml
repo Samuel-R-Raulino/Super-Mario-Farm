@@ -5,3 +5,12 @@ if(inv_player != noone){
 	inv_player = noone
 	
 }
+if(place_meeting(x+1,y,obj_water)){
+	
+}else if(place_meeting(x-1,y,obj_water)){
+
+}else if(place_meeting(x,y+1,obj_water)){
+
+}else if(place_meeting(x,y-1,obj_water)){
+
+}

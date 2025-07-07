@@ -36,7 +36,7 @@ if(open){
 		}
 	}
 	if(keyboard_check_pressed(vk_right)){
-		audio_play_sound(audio_select_effect,0,0)
+		audio_play_sound(audio_goofy_ahh2,0,0)
 		if slot_selected[0] < max_slot_x{
 			slot_selected[0] +=1
 		}else{

@@ -14,8 +14,8 @@
   "name":"obj_plant_debug_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"plant",
+    "path":"folders/Objetos/plant.yy",
   },
   "parentObjectId":{
     "name":"obj_plant_debug",

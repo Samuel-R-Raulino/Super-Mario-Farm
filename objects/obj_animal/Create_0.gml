@@ -13,4 +13,4 @@ turned = false
 substate = gun_sub_state
 drop = noone
 adubo = 0
-alarm[2] = 60
+alarm[2] = 45*30

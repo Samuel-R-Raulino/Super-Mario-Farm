@@ -2,18 +2,19 @@
 image_index = index
 
 var col_ver= 0
-if(index < 2){
+
+show_debug_message("o tempo é : "+string(timer))
+if(place_meeting(x+1,y,obj_water)){
 	crescer = true
+}else if(place_meeting(x-1,y,obj_water)){
+crescer = true
+}else if(place_meeting(x,y+1,obj_water)){
+crescer = true
+}else if(place_meeting(x,y-1,obj_water)){
+crescer = true
 }
-if(index < 2){
-	crescer = true
-}
-if(index < 2){
-	crescer = true
-}
-if(index < 2){
-	crescer = true
-}
-if image_index = 2{
-	crescer = false
+if(!crescer){
+	image_blend = c_aqua
+}else{
+	image_blend = c_white
 }

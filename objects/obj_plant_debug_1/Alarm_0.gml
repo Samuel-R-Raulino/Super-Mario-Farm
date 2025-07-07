@@ -2,4 +2,4 @@ if(crescer){
 	
 	index ++
 }
-alarm[0] = time-fertir
+alarm[0] = timer
