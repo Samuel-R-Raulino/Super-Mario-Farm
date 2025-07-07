@@ -55,7 +55,7 @@ function control_farm() {
 							//instance_create_layer(x_world, y_world, layer, obj_plant_debug)
 					}
 		        } 
-			}else if(_slot[1] != obj_hoe_drop and _slot[1] !=obj_fertilizer and _slot[1] != obj_water_bucket){
+			}else if(_slot[1] != obj_hoe_drop and _slot[1] !=obj_fertilizer and _slot[1] != obj_water_bucket and _slot[1] != obj_bucket){
 				var _obj_proximo = instance_nearest(x,y,obj_selected)
 		        if (keyboard_check_pressed(vk_control) and obj_selector.col = false and obj_selected !=noone) {
 					if(_obj_proximo!=noone){
@@ -107,6 +107,24 @@ function control_farm() {
 						_obj.val = 1
 						_slot[4]-=1
 						ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],_slot)
+					}
+		        } 
+			}else if(_slot[1] == obj_bucket){
+				var _obj_proximo = instance_nearest(x,y,obj_selected)
+				var _water_proxima = instance_nearest(x,y,obj_water)
+		        if (keyboard_check_pressed(vk_control) and obj_selector.col = false and obj_selected !=noone) {
+					
+					if(_obj_proximo!=noone){
+						if(_obj_proximo.x = x_world and _obj_proximo.y = y_world ){
+							instance_destroy(_obj_proximo)
+						}else{
+							if( (_water_proxima!=noone and _water_proxima.x == x_world and _water_proxima.y == y_world)){
+								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],[spr_water_bucket,obj_water_bucket,"uni",noone,noone,obj_water])
+							}else{
+								ds_grid_set(global.inventory,obj_mario_farm.inv.slot_use[0],obj_mario_farm.inv.slot_use[1],[spr_water_bucket,obj_water_bucket,"uni",noone,noone,obj_water])
+								
+							}
+						}
 					}
 		        } 
 			}else if(_slot[1] == obj_fertilizer){
