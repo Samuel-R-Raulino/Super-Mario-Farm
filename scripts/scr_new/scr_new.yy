@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_new",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_new",
+  "parent":{
+    "name":"scr_inv_funcs",
+    "path":"folders/Scripts/scr_inv_funcs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,4 +1,4 @@
-if(crescer){
+if(crescer and index < 3){
 	
 	index ++
 }

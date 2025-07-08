@@ -12,6 +12,9 @@ if(keyboard_check_pressed(vk_alt) and distance_to_object(obj_mario_farm) < 30){
 if(keyboard_check_pressed(ord("N"))){
 	new_state = !new_state
 }
+if(keyboard_check_pressed(ord("M"))){
+	room_restart()
+}
 if(open and player.state != player_edit and !Main.player_stop){
 	player.last_state = player.state
 	player.state = player_edit

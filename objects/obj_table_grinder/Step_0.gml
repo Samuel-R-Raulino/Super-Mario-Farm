@@ -10,7 +10,8 @@ if(distance_to_object(obj_mario_farm) < 10 and object!=noone){
 var object_selected = obj_mario_farm.inv.obj_selected
 var condition_1 = object_selected!=noone and object_selected == obj_carrot
 var condition_2 = object_selected!=noone and object_selected == obj_wheat
-if(condition_1 or condition_2){
+var condition_3 = object_selected!=noone and object_selected == obj_mate
+if(condition_1 or condition_2 or condition_3){
 	object = object_selected
 }
 

@@ -10,3 +10,4 @@ else if(substate != noone and changed){
 }
 
 script_execute(state)
+show_debug_message(state)

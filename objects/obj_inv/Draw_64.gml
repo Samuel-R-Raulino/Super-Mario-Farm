@@ -25,6 +25,8 @@ if(open){
 				if(slot[3] == "qtd"){
 					if(slot[0] == spr_rock or slot[0] == spr_wood_drop){
 						draw_sprite_ext(slot[0],0,i*scale*size+8,ii*scale*size+8,scale/2,scale/2,0,c_white,1)
+					}else if(slot[0] == spr_mate_plant){
+						draw_sprite_ext(slot[0],0,i*scale*size,ii*scale*size,scale/2,scale/2,0,c_white,1)
 					}else{
 						draw_sprite_ext(slot[0],0,i*scale*size,ii*scale*size,scale/2,scale/2,0,c_white,1)
 					}

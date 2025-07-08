@@ -1,6 +1,7 @@
 index = 0
 crescer = false
-timer = 45*60
+//timer = 45*60
+timer = 45
 alarm[0] = timer
 criar_obj = noone
 criar_obj_crescido = noone

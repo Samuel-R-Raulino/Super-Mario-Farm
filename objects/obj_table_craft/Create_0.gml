@@ -5,6 +5,8 @@ slot = noone
 object = noone
 inventory = ds_grid_create(3,1)
 ds_grid_set(inventory,0,0,[spr_hoe,obj_hoe_drop,"uni",noone,noone,other])
+ds_grid_set(inventory,1,0,[spr_cuia,obj_cuia,"uni",noone,noone,other])
+ds_grid_set(inventory,2,0,[spr_chimas,obj_chimas,"uni",noone,noone,other])
 open = false
 player = obj_mario_farm
 slot_selected = [0,0]
