@@ -18,14 +18,15 @@ if(open){
 			}
 			var slot_array = [i,ii]
 			if slot_selected[0] == i and slot_selected[1] == ii{
-				if(keyboard_check_pressed(ord("G"))){
-					audio_play_sound(audio_crafting,0,0)
+				if(keyboard_check_pressed(ord("G"))  or gamepad_button_check_pressed(0, gp_face1)){
 					draw_sprite_ext(spr_slot_2,0,i*scale*size,ii*scale*size,scale,scale,0,c_white,1)
 					if(slot!=0 and craft[0] and craft[1] and slot[0]!=spr_chimas){
+						audio_play_sound(audio_crafting,0,0)
 						ver_item_qtd(inventory,global.inventory,spr_wood_drop,3,true)
 					    ver_item_qtd(inventory,global.inventory,spr_rock,3,true)
 						add_item_uni(slot[0],slot[1],noone)
-					}else{
+					}else if(slot!=0 and craft[0] and craft[1] and slot[0]==spr_chimas){
+						audio_play_sound(audio_crafting,0,0)
 						ver_item_uni(inventory,global.inventory,spr_cuia,0,true)
 						add_item_uni(slot[0],slot[1],noone)
 						//craft[0] = ver_item_uni(inventory,global.inventory,spr_cuia,0,false)

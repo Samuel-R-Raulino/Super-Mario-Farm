@@ -9,7 +9,8 @@ if(open){
 			var slot_array = [i,ii]
 			
 			if slot_selected[0] == i and slot_selected[1] == ii{
-				if(keyboard_check_pressed(ord("D"))){
+				if (keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_face3)) {
+
 					audio_play_sound(audio_selecting,0,0)
 					draw_sprite_ext(spr_slot_2,0,i*scale*size,ii*scale*size,scale,scale,0,c_white,1)
 					slot_use = [i,ii]

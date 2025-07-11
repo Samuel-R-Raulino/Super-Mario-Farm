@@ -3,10 +3,11 @@ function main_farm(){
 	    image_blend = c_white;
 	}
 	if(substate != gun_sub_state and !audio_is_playing(audio_dash)){
-		if(keyboard_check_pressed(vk_space)){
-			var _attack = instance_create_layer(x,y,"Instances_5",obj_attack)
-			_attack.player = self
+		if (keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0, gp_face1)) {
+			var _attack = instance_create_layer(x, y, "Instances_5", obj_attack);
+			_attack.player = self;
 		}
+
 	}
 	/*_plant = instance_nearest(x, y, obj_plant_debug);
 	if (_plant != noone) {
@@ -15,10 +16,11 @@ function main_farm(){
 	    }
 	}
 	*/
-	var _left = keyboard_check(vk_left)
-	var _right = keyboard_check(vk_right)
-	var _up = keyboard_check(vk_up)
-	var _down = keyboard_check(vk_down)
+	var _left  = keyboard_check(vk_left)  or gamepad_button_check(0, gp_padl);
+	var _right = keyboard_check(vk_right) or gamepad_button_check(0, gp_padr);
+	var _up    = keyboard_check(vk_up)    or gamepad_button_check(0, gp_padu);
+	var _down  = keyboard_check(vk_down)  or gamepad_button_check(0, gp_padd);
+
 
 	var movex = +_right -_left 
 	var movey = +_down -_up 

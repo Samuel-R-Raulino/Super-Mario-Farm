@@ -1,5 +1,6 @@
 if(distance_to_object(obj_mario_farm) < 10 and object!=noone){
-	if(keyboard_check(vk_space)){
+	if(keyboard_check(vk_space) or gamepad_button_check(0, gp_face3)){
+		
 		crescer = true
 	}else{
 		crescer = false

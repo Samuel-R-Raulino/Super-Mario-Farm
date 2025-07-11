@@ -1,5 +1,5 @@
 
-if(keyboard_check_pressed(vk_alt) and distance_to_object(obj_mario_farm) < 30){
+if(keyboard_check_pressed(vk_alt) and distance_to_object(obj_mario_farm) < 30 or gamepad_button_check_pressed(0, gp_face3) and distance_to_object(obj_mario_farm) < 30){
 	open = !open
 	if(start_sound){
 		play_sound(audio_open_inventory)
@@ -28,14 +28,16 @@ if(open){
 	var min_slot_y = 0
 	var max_slot_x = ds_grid_width(inventory)-1
 	var max_slot_y = ds_grid_height(inventory)-1
-	if(keyboard_check_pressed(ord("A"))){
+	if(keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0, gp_shoulderlb)){
+		audio_play_sound(audio_select_effect,0,0)
 		if slot_selected[0] >min_slot_x{
 			slot_selected[0] -=1
 		}else{
 			slot_selected[0] = max_slot_x
 		}
 	}
-	if(keyboard_check_pressed(ord("D"))){
+	if(keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_shoulderrb)){
+		audio_play_sound(audio_select_effect,0,0)
 		if slot_selected[0] < max_slot_x{
 			slot_selected[0] +=1
 		}else{
